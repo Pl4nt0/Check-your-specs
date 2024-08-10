@@ -1,4 +1,3 @@
-
 function findSpecs() {
     const make = document.getElementById('make').value;
     const year = document.getElementById('year').value;
@@ -9,8 +8,8 @@ function findSpecs() {
         return;
     }
 
-    // Simulated API call (replace with real API call later)
-    fetch('https://your-backend-api-url.com/find-specs', {
+    // Make the API request to your Glitch backend
+    fetch('https://your-project-name.glitch.me/find-specs', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
