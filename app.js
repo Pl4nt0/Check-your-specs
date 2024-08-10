@@ -9,7 +9,7 @@ function findSpecs() {
     }
 
     // Make the API request to your Glitch backend
-    fetch(https://glitch.com/edit/#!/fuchsia-fanatical-lip, {
+    fetch('https://fuchsia-fanatical-lip.glitch.me', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
