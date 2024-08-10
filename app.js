@@ -9,7 +9,7 @@ function findSpecs() {
     }
 
     // Make the API request to your Glitch backend
-    fetch('https://fuchsia-fanatical-lip.glitch.me', {
+    fetch('https://fuchsia-fanatical-lip.glitch.me/find-specs', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -28,7 +28,6 @@ function findSpecs() {
             specsHtml += '<p><strong>Model:</strong> ' + data.model + '</p>';
             specsHtml += '<p><strong>Frame Material:</strong> ' + data.frame_material + '</p>';
             specsHtml += '<p><strong>Wheel Size:</strong> ' + data.wheel_size + '</p>';
-            // Add other specs as needed
 
             resultDiv.innerHTML = specsHtml;
         }
